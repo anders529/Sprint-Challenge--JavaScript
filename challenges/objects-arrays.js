@@ -102,9 +102,20 @@ const contactInfo = [
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
-const unisWithUni = [];
-console.log(unisWithUni);
-
+function university() {
+const unisWithUni = [
+          {university: "Missouri Southern State College"},
+          {university: "The School of the Art Institute of Chicago"},
+          {university: "Marian College"},
+          {university: "International Medical & Technological University"},
+          {university: "Sultan Salahuddin Abdul Aziz Shah Polytechnic"},
+          {university: "Fachhochschule Rosenheim, Hochschule für Technik"},
+          {university: "Salem University"},
+          {university: "Coastal Carolina University"},
+          {university: "Universidad Católica de Ávila"},
+          {university: "Universitat Rovira I Virgili Tarragona"},];
+console.log(unisWithUni.filter(university));
+}
 
 // ==== ADVANCED Array Methods ====
 
