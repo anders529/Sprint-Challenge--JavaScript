@@ -30,13 +30,30 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+        foreach goes over a list and applies some kind of math operation with side effects to each list member basically it saves each list member to a database
+
+        map basially just goes over some kind of list and it transforms each member of that list and returns another list of that same size with the transformed members such as converting a list of strings to uppercase
+
 2. What is the difference between a function and a method?
+
+        A function is some code that is called by explicitly by name. You can pass data to operate parameters and can also return data.
+
+        A method is something that's called by a name that's associated with some kind of  object. It's essentially identical to a function except that it's implicitly passed through an object on what it was called and can work on data that is contained within that class.
 
 3. What is closure?
 
+    A Closure is a bunch of functions that are clumped together references to its surrounding environment. It's basically the same as what you do in less with classes.
+
 4. Describe the four rules of the 'this' keyword.
 
+    Window/Global Object Binding
+    Implicit Binding
+    New Binding
+    Explicit Binding
+
 5. Why do we need super() in an extended class?
+
+    To call on an earlier class that it is extending from.    
 
 ## Project Set up
 
