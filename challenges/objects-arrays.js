@@ -70,17 +70,12 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-const universities = ["Missouri Southern State College",
-                     "The School of the Art Institute of Chicago",
-                     "Marian College",
-                     "International Medical & Technological University",
-                     "Sultan Salahuddin Abdul Aziz Shah Polytechnic",
-                     "Fachhochschule Rosenheim, Hochschule für Technik",
-                     "Salem University",
-                     "Coastal Carolina University",
-                     "Universidad Católica de Ávila",
-                     "Universitat Rovira I Virgili Tarragona"];
-console.log(universities.sort());
+const universities = [];
+  for(let i = 0; i < graduates.length; i++) {
+    universities.push(graduates[i].university);
+    universities.sort();
+  }
+  console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
 
@@ -88,32 +83,16 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [
-      "Cynde ctorry0@macromedia.com",
-      "Saundra swhal1@state.gov",
-      "Lambert lparham2@techcrunch.com",
-      "Modestine mdolder3@symantec.com",
-      "Chick camorts4@google.com.au",
-      "Jakob jharken5@spiegel.de",
-      "Robbi rbrister6@redcross.org",
-      "Colline cbrosh7@alibaba.com",
-      "Michail mrome8@shinystat.com",
-      "Hube hlethbrig9@foxnews.com"];
+const contactInfo = [];
+for(let i = 0; i < graduates.length; i++) {
+  universities.push(graduates[i].university);
+  universities.sort();
+}
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 function university() {
-const unisWithUni = [
-          {university: "Missouri Southern State College"},
-          {university: "The School of the Art Institute of Chicago"},
-          {university: "Marian College"},
-          {university: "International Medical & Technological University"},
-          {university: "Sultan Salahuddin Abdul Aziz Shah Polytechnic"},
-          {university: "Fachhochschule Rosenheim, Hochschule für Technik"},
-          {university: "Salem University"},
-          {university: "Coastal Carolina University"},
-          {university: "Universidad Católica de Ávila"},
-          {university: "Universitat Rovira I Virgili Tarragona"},];
+const unisWithUni = [];
 console.log(unisWithUni.filter(university));
 }
 
@@ -139,57 +118,46 @@ const zooAnimals = [
 The zoos want to display both the scientific name and the animal name in front of the habitats. Populate the displayNames array with only the animal_name and scientific_name of each animal. displayNames will be an array of strings, and each string should follow this pattern: "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const displayNames = [
-  {animal_name: "Jackal, asiatic", scientific_name: "Canis aureus"},
-  {animal_name: "Screamer, southern", scientific_name: "Chauna torquata"},
-  {animal_name: "White spoonbill", scientific_name: "Platalea leucordia"},
-  {animal_name: "White-cheeked pintail", scientific_name: "Anas bahamensis"},
-  {animal_name: "Black-backed jackal", scientific_name: "Canis mesomelas"},
-  {animal_name: "Brolga crane", scientific_name: "Grus rubicundus"},
-  {animal_name: "Common melba finch", scientific_name: "Pytilia melba}"},
-  {animal_name: "Pampa gray fox", scientific_name: "Pseudalopex gymnocercus}"},
-  {animal_name: "Hawk-eagle, crowned", scientific_name: "Spizaetus coronatus"},
-  {animal_name: "Australian pelican", scientific_name: "Pelecanus conspicillatus"}
-                    ];
-console.log(displayNames.forEach(element => console.log(element)));
+const displayNames = zooAnimals;
+console.log(displayNames.forEach(displayNames => console.log(displayNames.toString())));
 
 /* Request 2: .map()
 
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
 
 */
-function lowCaseAnimalNames() {
-const lowCaseAnimalNames = [
-  {animal_name: "Jackal, asiatic"},
-  {animal_name: "Screamer, southern"},
-  {animal_name: "White spoonbill"},
-  {animal_name: "White-cheeked pintail"},
-  {animal_name: "Black-backed jackal"},
-  {animal_name: "Brolga crane"},
-  {animal_name: "Common melba finch"},
-  {animal_name: "Pampa gray fox"},
-  {animal_name: "Hawk-eagle, crowned"},
-  {animal_name: "Australian pelican"}
-];
-const map1 = lowCaseAnimalNames.map( 
-    console.log(lowCaseAnimalNames.toLowerCase()));
-}
+const lowCaseAnimalNames = zooAnimals.map((animal_name) => {
+  return {'animal_name':animal_name.animal_name}
+}) 
+    
 /* Request 3: .filter() 
 
 The zoos are concerned about animals with a lower population count. Using filter, create a new array of objects called lowPopulationAnimals which contains only the animals with a population less than 5.
 
 */
+// function lowPopulationAnimals(zooAnimals) {
+//   let lowPopulationAnimals = [];
+//   for(let i = 0; i < zooAnimals.population.length; i++){
+//     if(zooAnimals[i].population <= 5) {
+//       cars.push(zooAnimals[i])
+//     }
+//   };
+//   console.log(lowPopulationAnimals);
+//   // return lowPopulationAnimals;
+// }
+function lowPopulationAnimals() {
 const lowPopulationAnimals = [];
-console.log(lowPopulationAnimals).filter();
-
+console.log(lowPopulationAnimals.filter(lowPopulationAnimals))
+}
 /* Request 4: .reduce() 
 
 The zoos need to know their total animal population across the United States. Find the total population from all the zoos using the .reduce() method. Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
+function populationTotal() {
 const populationTotal = 0;
 console.log(populationTotal.reduce());
-
+}
 
 /*
 
