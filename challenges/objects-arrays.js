@@ -88,7 +88,17 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [];
+const contactInfo = [
+      "Cynde ctorry0@macromedia.com",
+      "Saundra swhal1@state.gov",
+      "Lambert lparham2@techcrunch.com",
+      "Modestine mdolder3@symantec.com",
+      "Chick camorts4@google.com.au",
+      "Jakob jharken5@spiegel.de",
+      "Robbi rbrister6@redcross.org",
+      "Colline cbrosh7@alibaba.com",
+      "Michail mrome8@shinystat.com",
+      "Hube hlethbrig9@foxnews.com"];
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
